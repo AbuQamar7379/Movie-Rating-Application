@@ -11,4 +11,8 @@ passport.use("jwt", jwtStrategy);
 
 app.use("/api", router);
 
+app.use("/", (req, res) =>
+  res.send("Movie Rating Application Server is running.............")
+);
+
 module.exports = app;
